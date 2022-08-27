@@ -1,12 +1,14 @@
 .navbar {
     display: flex;
-    position: fixed;
+    position: sticky;
     top: 0;
     box-shadow: 1px 1px 1px 1px rgb(29, 29, 29);
+    background-color: black;
     height: 15vh;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .navbar__left {
@@ -35,6 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     flex: 0.3
 }
 
@@ -74,6 +77,7 @@
 }
 
 .highlight {
+    margin-top: 20px;
     padding: 5px;
     color: black;
     background-color: rgb(224, 224, 224);

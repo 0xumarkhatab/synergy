@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@600&display=swap');
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.introduction__title {
+    font-family: 'DM Sans', sans-serif;
+    color: #464646;
+    font-size: 8em;
+    color: white;
+    font: 900 sans-serif;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    color: #464646;
+
+
+}
+
+
+
+.introduction__description {
+    max-width: 800px;
+    margin-top: 3px;
+    font-family: 'Lexend Exa', sans-serif;
+    color: #464646;
+    font-size: 28px;
+    line-height: 1.8em;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    background-color: #000;
+
+}
+
+.gradient {
+    background-image: url(https://assets.website-files.com/5fa9a68799d2454eeced93d7/5fab12e69d1d818a79203947_SqsFmi8lZMtI.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, .2);
+    margin-left: 30px;
+
+}
+
+
+@media only screen and (max-width:1000px) {
+    .introduction__title {
+        margin-top: 10vh;
+
+        font-size: min(5em, 10vw);
+        color: white;
+        font: 900 sans-serif;
+
+
+    }
+}
