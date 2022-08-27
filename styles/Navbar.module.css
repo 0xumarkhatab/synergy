@@ -9,13 +9,14 @@
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+
 }
 
 .navbar__left {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    flex: 0.5;
+    flex: 0.4;
 
 }
 
@@ -38,14 +39,19 @@
     justify-content: space-between;
     align-items: center;
 
-    flex: 0.3
+
 }
 
 .navbar__center>p {
+
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: 300ms all ease-in-out;
+    margin-left: 20px;
+    transform: scale(1.0);
+
 
 }
 
@@ -85,4 +91,17 @@
     border-radius: 5px;
     font-size: 13px;
     font-family: 'DM Sans', sans-serif;
+}
+
+@media only screen and (max-width:800px) {
+
+    .navbar__center,
+    .navbar__right {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
 }

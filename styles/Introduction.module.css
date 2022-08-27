@@ -10,7 +10,7 @@
 .introduction__title {
     font-family: 'DM Sans', sans-serif;
     color: #464646;
-    font-size: 8em;
+    font-size: 7em;
     color: white;
     font: 900 sans-serif;
     word-wrap: break-word;
@@ -25,7 +25,6 @@
 
 .introduction__description {
     max-width: 800px;
-    margin-top: 3px;
     font-family: 'Lexend Exa', sans-serif;
     color: #464646;
     font-size: 28px;

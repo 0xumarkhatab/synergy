@@ -1,13 +1,16 @@
 import React from 'react'
-import styles from "../styles/Navbar.module.css";
+import styles from "../../styles/Navbar.module.css";
+import Link from 'next/link';
 
 function Navbar() {
     return (
         <div className={styles.navbar}>
             <div className={styles.navbar__left}>
-                <div className={styles.navbar__left__logo}>
-                    <img src='./synergy_icon.png' />
-                </div>
+                <Link href={"/"}>
+                    <div className={styles.navbar__left__logo}>
+                        <img src='./synergy_icon.png' />
+                    </div>
+                </Link>
 
             </div>
             <div className={styles.navbar__center}>
