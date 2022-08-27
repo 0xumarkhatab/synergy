@@ -3,7 +3,7 @@ import styles from "../styles/GradientButton.module.css";
 
 function GradientButton({ onClick, isCenter, title }) {
     return (
-        isCenter ?
+        isCenter === true ?
             <div className={`${styles.centered} ${styles.gradient__button}`}>
                 <button onClick={onClick} >{title}</button>
             </div>

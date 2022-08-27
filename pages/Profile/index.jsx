@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { ethers } from "ethers";
 import GradientButton from '../../components/GradientButton';
-import ProfileView from "./view"
+import ProfileView from './view';
+import styles from "../../styles/Profile.module.css"
+
 function Profile() {
     const [isWalletConnected, setIsWalletConnected] = useState(false);
 
@@ -13,12 +15,14 @@ function Profile() {
 
     }
     useEffect(() => {
-        connectWallet();
+        //        connectWallet();
     }, [])
-
+    if (!isWalletConnected) {
+        console.log("should connect")
+    }
     return (
-        <div>
-            {!isWalletConnected && <GradientButton isCenter={true} title={"Connect Wallet"} onClick={connectWallet} />}
+        <div className={styles.profile}>
+            {isWalletConnected === false && <GradientButton title={"Connect Wallet"} onClick={connectWallet} />}
             {isWalletConnected && <ProfileView />}
 
 

@@ -1,0 +1,30 @@
+.profile__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: 600;
+    background-image: url(https://assets.website-files.com/5fa9a68799d2454eeced93d7/5fab12e69d1d818a79203947_SqsFmi8lZMtI.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, .2);
+
+
+
+}
+
+.view__form {
+    height: fit-content;
+    width: 50vw;
+    padding: 40px;
+    box-shadow: 1px 1px 1px 1px rgb(17, 17, 17);
+    background-color: black;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+
+}
+
+.view__form button {
+    margin-top: 5vh;
+}

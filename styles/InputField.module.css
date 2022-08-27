@@ -1,0 +1,21 @@
+.input__field {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.input__field>input {
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    width: max(20vw, 80px);
+
+
+
+}

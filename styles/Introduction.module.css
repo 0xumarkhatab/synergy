@@ -4,9 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    padding-top: 5vh;
-    padding-bottom: 10vh;
+    height: 90vh;
 
 
 }
@@ -14,10 +12,11 @@
 .introduction__title {
     font-family: 'DM Sans', sans-serif;
     color: #464646;
-    font-size: 7em;
+    font-size: 90px;
     color: white;
-    font-weight: bold;
     font: 900 sans-serif;
+    font-weight: bolder;
+
     word-wrap: break-word;
     display: flex;
     align-items: center;
@@ -32,7 +31,7 @@
     max-width: 800px;
     font-family: 'Lexend Exa', sans-serif;
     color: #464646;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.4em;
     text-align: center;
     -webkit-box-sizing: border-box;
@@ -54,17 +53,16 @@
 }
 
 .action__button {
-    margin-top: 2vh;
+    margin-top: 3vh;
 }
 
 @media only screen and (max-width:1000px) {
     .introduction__title {
         margin-top: 10vh;
 
-        font-size: min(7em, 10vw);
-        font-weight: bold;
+        font-size: min(5em, 8vw);
+        font-weight: 900;
         color: white;
-        font: 900 sans-serif;
 
 
     }
