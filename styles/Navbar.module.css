@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
     box-shadow: 1px 1px 1px 1px rgb(29, 29, 29);
     background-color: black;

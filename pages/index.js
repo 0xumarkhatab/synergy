@@ -5,8 +5,7 @@ import Introduction from './Introduction';
 import Navbar from './Navbar'
 import styles from '../styles/Home.module.css'
 import { ethers } from "ethers";
-import Profile from './profile';
-import Link from 'next/link';
+import Profile from './Profile';
 
 
 
@@ -26,12 +25,7 @@ export default function Home() {
         <title>Synergy</title>
         <link rel="icon" href="/synergy_symbol.png" />
       </Head>
-
       <Introduction />
-      <Link href="/Profile">
-        <GradientButton title="Get Started" onClick={connectWallet} isCenter={true} />
-      </Link>
-
     </div>
   )
 }
