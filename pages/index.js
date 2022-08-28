@@ -9,6 +9,7 @@ import Profile from './Profile';
 
 
 
+
 export default function Home() {
   const [isWalletConnected, setIsWalletConnected] = useState(false);
   async function connectWallet() {

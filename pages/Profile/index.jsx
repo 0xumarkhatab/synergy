@@ -1,28 +1,29 @@
 import React, { useEffect, useState } from 'react'
+import Head from 'next/head'
+
 import { ethers } from "ethers";
 import GradientButton from '../../components/GradientButton';
-import ProfileView from './view';
+import ProfileView from './profileView';
 import styles from "../../styles/Profile.module.css"
+
+import CeramicFunctions, { connectToSelfID } from '../../utils/ceramicFunctions';
 
 function Profile() {
     const [isWalletConnected, setIsWalletConnected] = useState(false);
 
-    async function connectWallet() {
-        const provider = new ethers.providers.Web3Provider(window.ethereum)
-        await provider.send("eth_requestAccounts", []);
-        const signer = provider.getSigner()
-        setIsWalletConnected(true);
 
+    async function connectToID() {
+        let ifConnected = await connectToSelfID();
+        setIsWalletConnected(true);
     }
-    useEffect(() => {
-        //        connectWallet();
-    }, [])
-    if (!isWalletConnected) {
-        console.log("should connect")
-    }
+
     return (
         <div className={styles.profile}>
-            {isWalletConnected === false && <GradientButton title={"Connect Wallet"} onClick={connectWallet} />}
+            <Head>
+                <title>Profile Access</title>
+            </Head>
+            <CeramicFunctions />
+            {isWalletConnected === false && <GradientButton title={"Connect Wallet"} onClick={connectToID} />}
             {isWalletConnected && <ProfileView />}
 
 

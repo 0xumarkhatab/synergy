@@ -1,5 +1,6 @@
 .input__field {
     font-size: 14px;
+    font-weight: 700;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,4 +19,9 @@
 
 
 
+}
+
+.input__field>input:active,
+.input__field>input:focus {
+    border: 1px solid rgb(56, 182, 56);
 }

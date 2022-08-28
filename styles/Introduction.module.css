@@ -32,6 +32,9 @@
     font-family: 'Lexend Exa', sans-serif;
     color: #464646;
     font-size: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
     line-height: 1.4em;
     text-align: center;
     -webkit-box-sizing: border-box;

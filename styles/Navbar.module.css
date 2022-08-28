@@ -51,7 +51,7 @@
     transition: 300ms all ease-in-out;
     margin-left: 20px;
     transform: scale(1.0);
-    color: rgb(181, 181, 181);
+    color: rgb(234, 234, 234);
     font-size: 14px;
 
 
@@ -86,7 +86,7 @@
 
 .highlight {
     margin-top: 20px;
-    padding: 2px;
+    padding: 4px;
     color: white;
     background-color: rgb(16, 15, 15);
     border: 1px solid grey;

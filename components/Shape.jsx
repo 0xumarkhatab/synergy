@@ -6,7 +6,8 @@ function Shape({ link }) {
             height: "100vh",
             objectFit: "contain",
             display: "flex",
-            justifyContent: "center"
+            justifyContent: "center",
+            userSelect: "none"
 
         }}> <img src={link} /></div>
     )
