@@ -18,8 +18,10 @@ export const updateUser = async (user) => {
 
     alert("information saved")
 };
-export const getUser = async (user) => {
+export const getUser = async () => {
     return record?.content?.user;
+
+
 };
 
 

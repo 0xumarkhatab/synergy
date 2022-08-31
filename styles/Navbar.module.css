@@ -19,7 +19,8 @@
 }
 
 .navbar__left img {
-    width: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     transition: 300ms all ease-in-out;
 }

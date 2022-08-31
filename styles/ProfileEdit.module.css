@@ -3,6 +3,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+}
+
+.edit__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
 }
 
 .profile__heading {
@@ -35,4 +44,10 @@
 
 .edit__form button {
     margin-top: 5vh;
+}
+
+@media only screen and (max-width:1000px) {
+    .edit {
+        margin-top: 40vh;
+    }
 }

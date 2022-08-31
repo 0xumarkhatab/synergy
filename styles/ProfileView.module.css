@@ -1,12 +1,49 @@
-.view__edit {
+.view {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    width: 70vw;
+    margin-top: 12vh;
     height: 100vh;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
-.view__edit>button {
+.view__banner {
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.profile__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+
+}
+
+.profile__head>.profile__picture {
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.profile__head>.profile__picture>img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+
+
+
+}
+
+.view__banner>img {
+    width: 60vw;
+    height: 40vh;
+    object-fit: contain;
+
+}
+
+.view .view__edit>button {
     outline: none;
     border: none;
     background-color: black;

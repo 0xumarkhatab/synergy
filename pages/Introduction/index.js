@@ -12,7 +12,7 @@ function Introduction({ }) {
                 Unify <p className={styles.gradient}> your identity</p>
             </div>
             <div className={styles.introduction__description}>
-                Synergy is all about bringing your all social media reputation at one place
+                Synergy is all about bringing your all social media assets and reputation at one place
             </div>
             <div className={styles.action__button}>
                 <Link href="/Profile">
