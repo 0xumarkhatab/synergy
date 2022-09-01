@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: white;
+    padding-bottom: 10vh;
 
 }
 

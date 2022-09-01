@@ -29,28 +29,19 @@ function ProfileEdit(props) {
     const router = useRouter()
 
     async function saveChanges() {
-        const user = {
+        const _user = {
             firstName, lastName, userName, email, avatarLink, discordId, twitterId, githubId, bio,
             followers: [{ name: 'a' }, { name: 'b' }, { name: 'c' }, { name: 'd' }, { name: 'e' }, { name: 'f' }, { name: 'g' }, { name: 'h' }, { name: 'i' }],
             following: [{ name: 'e' }, { name: 'f' }, { name: 'g' }, { name: 'h' }, { name: 'i' }]
 
         }
-        await props.updateUser(user);
-        router.push("/Profile/profileView");
+        await props.updateUser(_user);
+
+        props.isEdit(false);
     }
 
-    async function fillUserInformation() {
-        let _user = await props.getUser();
-        console.log(" retrieved user is ", _user)
-
-    }
-    useEffect(() => {
-        fillUserInformation();
-
-
-
-    }, [])
-
+   
+   
     if (loading) {
         return (
             <div className={styles.edit__center}>
@@ -84,7 +75,7 @@ function ProfileEdit(props) {
                 <InputField onChange={(e) => setTwitterId(e.target.value)} value={twitterId} id="TwitterId" key="TwitterId" title={"Twitter ID"} type="text" />
                 <InputField onChange={(e) => setGithubId(e.target.value)} value={githubId} id="githubId" key="githubId" title={"Github Id"} type="text" />
 
-                <GradientButton onClick={saveChanges} isCenter={true} title={"Save Changes"} key={"save"} />
+                <GradientButton onClick={saveChanges} isCenter={true} title={loading?"Saving Changes" : "Save Changes"} key={"save"} />
 
 
 

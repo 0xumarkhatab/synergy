@@ -4,6 +4,7 @@ function Shape({ link }) {
     return (
         <div style={{
             height: "100vh",
+            width:"100%",
             objectFit: "contain",
             display: "flex",
             justifyContent: "center",

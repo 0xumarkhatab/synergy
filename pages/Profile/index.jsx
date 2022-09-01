@@ -14,7 +14,7 @@ function Profile() {
     const [isWalletConnected, setIsWalletConnected] = useState(false);
     const [profileEditState, setProfileEditState] = useState(false);
     const [connection, connect, disconnect] = useViewerConnection();
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState({firstName:"Loading.."});
     const web3ModalRef = useRef();
     let record = useViewerRecord("basicProfile");
 
@@ -91,13 +91,9 @@ function Profile() {
         }
         if (connection.status === "connected") {
             console.log("DID is connected");
-            let a;
-            getUser().then(a => {
-                console.log("user is ", a);
+            let a = record?.content?.user;
+            console.log("user is ", a);
                 setUser(a);
-
-            });
-
 
         }
         else {
@@ -112,10 +108,13 @@ function Profile() {
         <div className={styles.profile}>
             <Head>
                 <title>Profile Access</title>
-            </Head>
+            </Head>\
+            <div className={styles.profile__connect}>
             {isWalletConnected === false && <GradientButton title={"Connect Wallet"} onClick={() => { connectToSelfID(); setIsWalletConnected(true) }} />}
-            {(profileEditState && isWalletConnected) && <ProfileEdit isEdit={setProfileEditState} user={user} getUser={getUser} updateUser={updateUser} />}
-            {(!profileEditState && isWalletConnected) && <ProfileView isEdit={setProfileEditState} getUser={getUser} />}
+            
+            </div>
+            {(profileEditState && isWalletConnected) && <ProfileEdit isEdit={setProfileEditState} user={user}  updateUser={updateUser} />}
+            {(!profileEditState && isWalletConnected) && <ProfileView isEdit={setProfileEditState} user={user} />}
 
 
         </div>

@@ -1,34 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 
 import styles from "../../styles/ProfileView.module.css";
 import GradientButton from '../../components/GradientButton';
 import { useViewerRecord } from "@self.id/react";
-
+import {useRouter} from "next/router"
 function ProfileView(props) {
     console.log("the props in view are ", props);
     const router = useRouter()
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState(props.user);
     let record = useViewerRecord("basicProfile");
     function LetsEditProfile() {
         props.isEdit(true);
     }
 
 
-    async function fillUserInformation() {
-        props.getUser().then(a => {
-            setUser(a);
+    
 
-        });
-
-    }
-
-    useEffect(() => {
-        fillUserInformation();
-    }, [])
-
+ 
     return (
         <>
             <Head>
@@ -48,8 +38,8 @@ function ProfileView(props) {
 
                 </div>
                 <div className={styles.profile__information}>
-                    <div className={styles.profile__name}>Umar Khatab</div>
-                    <div className={styles.profile__bio}>20 | Helping people learn Web3 🚀</div>
+                    <div className={styles.profile__name}>{props.user?.firstName} {props.user?.lastName}</div>
+                    <div className={styles.profile__bio}>{props.user?.bio}</div>
                 </div>
 
 

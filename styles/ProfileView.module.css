@@ -1,11 +1,12 @@
 .view {
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 50vw;
     margin-top: 12vh;
     height: 100vh;
     border: 1px solid white;
     border-radius: 10px;
+    color: white;
 }
 
 .view__banner {
@@ -37,8 +38,8 @@
 }
 
 .view__banner>img {
-    width: 60vw;
-    height: 40vh;
+    width: 45vw;
+    height: 20vw;
     object-fit: contain;
 
 }
