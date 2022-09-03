@@ -3,7 +3,7 @@ import React from 'react'
 function Shape({ link }) {
     return (
         <div style={{
-            height: "100vh",
+            height: "100%",
             width:"100%",
             objectFit: "contain",
             display: "flex",

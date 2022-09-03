@@ -30,13 +30,14 @@ function ProfileEdit(props) {
 
     async function saveChanges() {
         const _user = {
-            firstName, lastName, userName, email, avatarLink, discordId, twitterId, githubId, bio,
+            firstName, lastName, userName, email, avatarLink, discordId, twitterId, githubId, bio,profession,location,portfolio,
             followers: [{ name: 'a' }, { name: 'b' }, { name: 'c' }, { name: 'd' }, { name: 'e' }, { name: 'f' }, { name: 'g' }, { name: 'h' }, { name: 'i' }],
             following: [{ name: 'e' }, { name: 'f' }, { name: 'g' }, { name: 'h' }, { name: 'i' }]
 
         }
         await props.updateUser(_user);
-
+       
+        
         props.isEdit(false);
     }
 

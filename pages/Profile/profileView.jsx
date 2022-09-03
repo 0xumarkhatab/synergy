@@ -6,11 +6,38 @@ import styles from "../../styles/ProfileView.module.css";
 import GradientButton from '../../components/GradientButton';
 import { useViewerRecord } from "@self.id/react";
 import {useRouter} from "next/router"
+import NamedIcon from '../../components/NamedIcon';
+import ContactItem from '../../components/ContactItem';
+import ContactMe from '../../components/ContactMe';
+
 function ProfileView(props) {
     console.log("the props in view are ", props);
     const router = useRouter()
     const [user, setUser] = useState(props.user);
     let record = useViewerRecord("basicProfile");
+    const [showContacts,setShowContacts] =useState(false);
+    const [contacts,setContacts]=useState([
+        {
+            title:"discord",
+            data:props.user?.discordId,
+        },
+        {
+            title:"twitter",
+            data:props.user?.twitterId,
+
+        },
+        {
+            title:"github",
+            data:props.user?.githubId,
+
+        },
+        {
+            title:"linkedin",
+            data:props.user?.linkedin,
+
+        }
+        
+    ])
     function LetsEditProfile() {
         props.isEdit(true);
     }
@@ -26,20 +53,34 @@ function ProfileView(props) {
             </Head>
             <div className={styles.view}>
                 <div className={styles.view__banner}>
-                    <img src='./synergy_logo.png' />
+                    <img src='./synergy_logo.png' alt="Profile Banner"/>
                 </div>
                 <div className={styles.profile__head}>
                     <div className={styles.profile__picture}>
-                        <img src="./synergy_symbol.png" alt="" />
+                        <img src={props.user?.avatarLink} alt="Profile Picture" />
                     </div>
                     <div className={styles.profile__edit}>
-                        <GradientButton onClick={LetsEditProfile} title={"Edit"} key={"editProfile_"} />
+                        <GradientButton onClick={LetsEditProfile} title={"Edit Profile"} key={"editProfile_"} />
                     </div>
 
                 </div>
                 <div className={styles.profile__information}>
                     <div className={styles.profile__name}>{props.user?.firstName} {props.user?.lastName}</div>
                     <div className={styles.profile__bio}>{props.user?.bio}</div>
+                    <div className={styles.profile__professional}>
+                            <NamedIcon img={"./profession.png"} title={props.user?.profession} />
+                            <NamedIcon img={"./location.png"} title={props.user?.location} />
+                            {
+                                !showContacts &&  <NamedIcon isButton={true} onClick={()=>setShowContacts(true)} img={"./contact.png"} title={"Contact"} />
+                            }
+                            {
+                                showContacts &&         <ContactMe contactsShowToggle={setShowContacts} contacts={contacts} />
+
+                            }
+                            
+                    </div>
+                    
+                    
                 </div>
 
 

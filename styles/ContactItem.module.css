@@ -1,0 +1,14 @@
+.contact__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(194, 194, 194);
+border-radius: 10px;
+    
+}
+
+.contact__item > .heading{
+text-transform: capitalize;
+} 

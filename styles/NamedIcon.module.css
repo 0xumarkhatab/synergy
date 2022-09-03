@@ -1,0 +1,30 @@
+.named__icon{
+    display: flex;
+    align-items: center;
+    color: grey;
+    font-size: 16px;
+    margin-right: 10px;
+    height: 30px;
+    
+   
+}
+.named__icon>img{
+    width:20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 2px;
+
+    
+}
+.named__icon > .btn{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: grey;
+    font-size: 16px;
+}
+.named__icon > .btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}

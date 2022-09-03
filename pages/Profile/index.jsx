@@ -24,12 +24,12 @@ function Profile() {
   */
 
 
-    async function updateUser(user) {
-        let anotherUser = { ...user }
+    async function updateUser(_user) {
+        let anotherUser = { ..._user }
         await record.merge({
             user: anotherUser
         });
-
+        setUser(_user)
         alert("information saved")
 
     };
@@ -99,16 +99,18 @@ function Profile() {
         else {
             console.log("DID is not connected")
         }
+        let a = record?.content?.user;
+        console.log("user is ", a);
+            setUser(a);
 
-
-    }, [connection.status]);
+    }, [connection.status,record.content?.user]);
 
 
     return (
         <div className={styles.profile}>
             <Head>
                 <title>Profile Access</title>
-            </Head>\
+            </Head>
             <div className={styles.profile__connect}>
             {isWalletConnected === false && <GradientButton title={"Connect Wallet"} onClick={() => { connectToSelfID(); setIsWalletConnected(true) }} />}
             

@@ -1,0 +1,44 @@
+.contact__me {
+  padding: 10vh;
+  height: 100vh;
+  width: 98.8vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(202, 202, 202, 0.4);
+  animation: fadeInDisplay 1s ;
+  
+}
+@keyframes fadeInDisplay {
+0%{
+    opacity: 0;
+    width: 0;
+}
+100%{
+    opacity: 1;
+    width:100vw
+}
+
+}
+.contact__me__header {
+  display: flex;
+  justify-content: space-between;
+
+  width: auto;
+}
+
+.contact__me__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 80vw;
+  height: 70vh;
+  padding: 5vh;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  
+}
+
