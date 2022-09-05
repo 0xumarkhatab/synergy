@@ -1,0 +1,27 @@
+.platform__statistics{
+width: fit-content;
+padding: 20px;
+border: 1px solid grey;
+border-radius: 10px;
+box-shadow: 1px 1px 1px 1px grey;
+background-color: black;
+color: white;
+margin-bottom: 5vh;
+
+}
+.platform__title{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.platform__title > img{
+    width:20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+

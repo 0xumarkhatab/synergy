@@ -21,7 +21,8 @@ function Introduction() {
                 Unify <p className={styles.gradient}> your identity</p>
             </div>
             <div className={styles.introduction__description}>
-                Synergy is all about bringing your all social media assets and reputation at one place
+                Synergy is about bringing all your 
+                Digital Assets at one place including Social Media Reputation , NFTs and much more  
             </div>
             <div className={styles.action__button}>
                     <GradientButton title={Loading? "Navigating": "Get Started"} onClick={()=>{ setLoading(true); setTimeout(() => {

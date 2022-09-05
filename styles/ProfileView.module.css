@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     width: 50vw;
-    height: 100vh;
+    height: max(100vh,fit-content);
     border: 1px solid white;
     border-radius: 10px;
     color: white;
+    
 }
 
 .view__banner {
@@ -58,12 +59,25 @@
 .profile__professional{
     display: flex;
     padding-top: 20px;
+    justify-content: space-between;
     
 }
+.social__media__stats{
+    display: grid;
+    padding-top: 5vh;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+}
+
 @media only screen and (max-width: 1000px) {
     .profile__professional{
         display: block;
         
         }
-    
+
+        .social__media__stats{
+            grid-template-columns: auto auto;
+            gap: 5px;
+        }
 }

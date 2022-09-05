@@ -13,7 +13,7 @@
 .introduction__title {
     font-family: 'DM Sans', sans-serif;
     color: #464646;
-    font-size: 90px;
+    font-size: 110px;
     color: white;
     font: 900 sans-serif;
     font-weight: bolder;
@@ -57,14 +57,14 @@
 }
 
 .action__button {
-    margin-top: 3vh;
+    margin-top: 2vh;
 }
 
 @media only screen and (max-width:1000px) {
     .introduction__title {
         margin-top: 10vh;
 
-        font-size: min(5em, 8vw);
+        font-size: min(5.6em, 9vw);
         font-weight: 900;
         color: white;
 
