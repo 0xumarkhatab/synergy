@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/PlatformStatistics.module.css";
+import CircularTooltip from "./CircularTooltip";
 
 function PlatformStatistics({ platform }) {
   console.log("platform ", platform);
@@ -26,7 +27,29 @@ function PlatformStatistics({ platform }) {
         )}
 
         {platform.channels && (
-          <div className={styles.platform__channels}> Channels </div>
+          <div className={styles.platform__channels__wrapper}>
+              <div className={styles.platform__channels__heading}>Channels</div>
+
+            <div className={styles.platform__channels}>
+
+              <ul className={styles.platform__channels__list}></ul>
+              {platform.channels.slice(0,3).map((item) => {
+                return (
+                  <li className={styles.platform__channels__list__Item}>
+                    <CircularTooltip img={item.icon} title={item.title} />
+                  </li>
+                );
+              })}
+              
+
+            </div>
+            <div className={styles.platform__channels__more}>
+            {
+              
+              (platform.channels.length-3) >0 && <p> + {platform.channels.length-3} more</p>
+            }
+            </div>
+          </div>
         )}
       </div>
     </div>

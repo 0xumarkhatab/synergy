@@ -39,6 +39,7 @@ export const PlatformsData = [
           },
         ],
       },
+
       {
         title: "Ceramic",
         icon: "https://blog.ceramic.network/content/images/2020/11/ceramic-icon-rounded-500px.png",
@@ -75,6 +76,25 @@ export const PlatformsData = [
           },
         ],
       },
+      {
+        title: "Polygon",
+        icon: "https://cdn.iconscout.com/icon/free/png-256/polygon-token-4086724-3379854.png",
+        roles: [
+          {
+            title: "Community Builder",
+            icon: "https://cdn.icon-icons.com/icons2/3404/PNG/512/filled_circle_icon_216000.png",
+          },
+          {
+            title: "Moderator",
+            icon: "https://cdn.icon-icons.com/icons2/3404/PNG/512/filled_circle_icon_216000.png",
+          },
+          {
+            title: "Diamond Contributer",
+            icon: "https://cdn.icon-icons.com/icons2/3404/PNG/512/filled_circle_icon_216000.png",
+          },
+        ],
+      },
+      
     ],
   },
   {

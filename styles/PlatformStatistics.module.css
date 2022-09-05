@@ -24,4 +24,46 @@ margin-bottom: 5vh;
     margin-top: 5px;
 }
 
+.platform__channels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 50%;
 
+}
+.platform__channels__more{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.platform__channels__heading {
+    background-image: url(https://assets.website-files.com/5fa9a68799d2454eeced93d7/5fab12e69d1d818a79203947_SqsFmi8lZMtI.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, .2);
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+.platform__channels__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+.platform__channels__list__Item {
+   
+ 
+    display: inline-block;
+    position: relative;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+    -webkit-transition: .2s ease;
+    transition: .2s ease;
+  }
+  
+  .platform__channels__list__Item:nth-child(n+2) { margin-left: -50px; }
+  
+  .platform__channels__list:hover .platform__channels__list:nth-child(n+2) {
+     margin-left: -10px;
+  }

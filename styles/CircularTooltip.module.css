@@ -1,0 +1,17 @@
+.circular__tooltip{
+display: flex;
+width: 10px;
+height: 10px;
+}
+
+.circular__tooltip img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 50%;
+    border-radius: 1px solid grey;
+}
+.circular__tooltip>p{
+    width: 30px;
+    height: 10px;
+}

@@ -11,6 +11,8 @@ import ContactItem from "../../components/ContactItem";
 import ContactMe from "../../components/ContactMe";
 import PlatformStatistics from "../../components/PlatformStatistics";
 import { PlatformsData,Contacts } from "../../data";
+import ReactTooltip from 'react-tooltip';
+
 function ProfileView(props) {
   console.log("the props in view are ", props);
   const router = useRouter();
@@ -72,7 +74,8 @@ function ProfileView(props) {
           </div>
           <div className={styles.social__media__stats}>
             {
-              platforms.map(item=>{
+              platforms.map((item)=>{
+
                 return <PlatformStatistics key={"plt"+item.title} platform={item} />
               })
             }

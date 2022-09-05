@@ -13,12 +13,14 @@
     "@self.id/react": "^0.3.3",
     "@self.id/web": "^0.4.3",
     "@stablelib/wipe": "^1.0.1",
+    "@tippyjs/react": "^4.2.6",
     "ethers": "^5.7.0",
     "key-did-provider-ed25519": "^2.0.1",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-tooltip": "^4.2.21",
+    "tippy.js": "^6.3.7",
     "web3modal": "^1.9.9"
   },
   "devDependencies": {
