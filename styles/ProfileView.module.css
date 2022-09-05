@@ -81,3 +81,8 @@
             gap: 5px;
         }
 }
+@media only screen and (max-width: 800px) {
+        .social__media__stats{
+            grid-template-columns: auto ;
+        }
+}
