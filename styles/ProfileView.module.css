@@ -13,7 +13,10 @@
     border: 1px solid grey;
     border-radius: 10px;
 }
-
+.view__banner >img{
+    height: 100vh;
+    object-fit: contain;
+}
 .profile__head {
     display: flex;
     justify-content: space-between;
@@ -33,6 +36,7 @@
 
     object-fit: contain;
     border-radius: 50%;
+    margin-top: -12vh;
 
 
 }
