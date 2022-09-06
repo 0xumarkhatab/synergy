@@ -11,39 +11,89 @@ function PlatformStatistics({ platform }) {
         <h3 className={styles.platfrom__heading}>{platform.title}</h3>
       </div>
       <div className={styles.platform__numbers}>
-        {platform.followers && (
-          <div className={styles.platform__followers}>
-            {platform.followers.length} Followers
-          </div>
-        )}
+      {platform.followers && (
+          <div className={styles.platform__field__wrapper}>
+              <div className={styles.platform__field__heading}>Followers</div>
 
-        {platform.following && (
-          <div className={styles.platform__following}>
-            {platform.following.length} Following
-          </div>
-        )}
-        {platform.likes && (
-          <div className={styles.platform__likes}>{platform.likes} Likes</div>
-        )}
+            <div className={styles.platform__field}>
 
-        {platform.channels && (
-          <div className={styles.platform__channels__wrapper}>
-              <div className={styles.platform__channels__heading}>Channels</div>
-
-            <div className={styles.platform__channels}>
-
-              <ul className={styles.platform__channels__list}></ul>
-              {platform.channels.slice(0,3).map((item) => {
+              <div className={styles.platform__field__list}>
+              {platform.followers.slice(0,3).map((item) => {
                 return (
-                  <li className={styles.platform__channels__list__Item}>
-                    <CircularTooltip img={item.icon} title={item.title} />
-                  </li>
+                  <div className={styles.platform__field__list__Item}>
+                    <CircularTooltip img={item.img} title={item.screen_name} />
+                  </div>
                 );
               })}
+
+              </div>
               
 
             </div>
-            <div className={styles.platform__channels__more}>
+            <div className={styles.platform__field__more}>
+            {
+              
+              (platform.followers.length-3) >0 && <p> + {platform.followers.length-3} more</p>
+            }
+            </div>
+          </div>
+        )}
+        
+        {platform.followers && (
+          <div className={styles.platform__field__wrapper}>
+              <div className={styles.platform__field__heading}>Following</div>
+
+            <div className={styles.platform__field}>
+
+              <div className={styles.platform__field__list}>
+              {platform.following.slice(0,3).map((item) => {
+                return (
+                  <div className={styles.platform__field__list__Item}>
+                    <CircularTooltip img={item.img} title={item.screen_name} />
+                  </div>
+                );
+              })}
+
+              </div>
+              
+
+            </div>
+            <div className={styles.platform__field__more}>
+            {
+              
+              (platform.followers.length-3) >0 && <p> + {platform.followers.length-3} more</p>
+            }
+            </div>
+          </div>
+        )}
+        {platform.likes && (
+          <div className={styles.platform__field__wrapper}>
+              <div className={styles.platform__field__heading}>Likes</div>
+            <div>{platform.likes}💖</div>
+          </div>
+        )}
+        
+
+        {platform.channels && (
+          <div className={styles.platform__field__wrapper}>
+              <div className={styles.platform__field__heading}>Channels</div>
+
+            <div className={styles.platform__field}>
+
+              <div className={styles.platform__field__list}>
+              {platform.channels.slice(0,3).map((item) => {
+                return (
+                  <div className={styles.platform__field__list__Item}>
+                    <CircularTooltip img={item.icon} title={item.title} />
+                  </div>
+                );
+              })}
+
+              </div>
+              
+
+            </div>
+            <div className={styles.platform__field__more}>
             {
               
               (platform.channels.length-3) >0 && <p> + {platform.channels.length-3} more</p>
@@ -51,6 +101,7 @@ function PlatformStatistics({ platform }) {
             </div>
           </div>
         )}
+
       </div>
     </div>
   );

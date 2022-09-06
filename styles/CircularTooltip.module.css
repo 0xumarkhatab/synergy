@@ -3,6 +3,9 @@ display: flex;
 width: 10px;
 height: 10px;
 }
+.circular__tooltip:hover{
+    cursor: pointer;
+}
 
 .circular__tooltip img{
     width: 30px;

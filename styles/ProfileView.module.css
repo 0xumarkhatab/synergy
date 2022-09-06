@@ -1,7 +1,7 @@
 .view {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 60vw;
     height: max(100vh,fit-content);
     border: 1px solid white;
     border-radius: 10px;
@@ -69,12 +69,13 @@
 .social__media__stats{
     display: grid;
     padding-top: 5vh;
-    width: 100%;
-    gap: 20px;
+    width: 50vw;
+    gap: 5vw;
     grid-template-columns: auto auto auto;
+
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .profile__professional{
         display: block;
         
@@ -82,10 +83,10 @@
 
         .social__media__stats{
             grid-template-columns: auto auto;
-            gap: 5px;
+            gap: 5vw;
         }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
         .social__media__stats{
             grid-template-columns: auto ;
         }

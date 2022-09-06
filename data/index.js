@@ -136,7 +136,7 @@ export const PlatformsData = [
         img: "https://pbs.twimg.com/profile_images/1424866464063004679/YDg7WuQL_400x400.jpg",
       },
     ],
-    likes: 20000,
+    likes: 10690,
   },
   {
     title: "linkedinn",
@@ -155,7 +155,7 @@ export const PlatformsData = [
         img: "https://pbs.twimg.com/profile_images/1550415909214470144/wvHbtODV_400x400.jpg",
       },
       {
-        screen_name: "kacie",
+        screen_name: "Seemal",
         img: "https://pbs.twimg.com/profile_images/1424866464063004679/YDg7WuQL_400x400.jpg",
       },
     ],
@@ -177,6 +177,6 @@ export const PlatformsData = [
         img: "https://pbs.twimg.com/profile_images/1424866464063004679/YDg7WuQL_400x400.jpg",
       },
     ],
-    likes: 20000,
+    likes:52372,
   },
 ];
