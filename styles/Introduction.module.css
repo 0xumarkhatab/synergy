@@ -3,6 +3,7 @@
 .introduction {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: fit-content;
     background-color: black;
@@ -13,7 +14,7 @@
 .introduction__title {
     font-family: 'DM Sans', sans-serif;
     color: #464646;
-    font-size: 8em;
+    font-size: 110px;
     color: white;
     font: 900 sans-serif;
     font-weight: bolder;

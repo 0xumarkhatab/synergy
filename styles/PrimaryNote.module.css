@@ -1,4 +1,4 @@
-.main {
+.primary__note {
   padding: 5px;
   border: 1px solid aqua;
   border-radius: 10px;
@@ -10,7 +10,7 @@
   font-weight: 700;
 
 }
-.main button{
+.primary__note button{
     outline: none;
     border:none;
     color:black;

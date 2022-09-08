@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "../../styles/Introduction.module.css";
 import Shape from '../../components/Shape';
 import About from './About';
+import PoweredBy from '../../components/PoweredBy';
 function Introduction() {
 
         
@@ -17,6 +18,7 @@ function Introduction() {
 
             <Shape link={'https://assets.website-files.com/5fa9a68799d2454eeced93d7/5fab2bf215209297ab1c457d_agifcolossalsphere2.gif'} />
             <About />
+            <PoweredBy />
 
 
         </div>

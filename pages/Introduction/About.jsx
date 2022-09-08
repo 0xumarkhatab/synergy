@@ -16,7 +16,7 @@ function About() {
       <div className={styles.about__content}>
         <div className={styles.header}>
           <img src="./Synergy_symbol.png" alt="synergy_logo"  />
-          <h3>Synergy</h3>
+          <p>Synergy</p>
           <PrimaryButton
             title={"Beta version"}
             disabled={true}
