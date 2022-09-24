@@ -9,7 +9,7 @@ function CircularTooltip({ img, title }) {
   return (
     <div className={styles.circular__tooltip}>
       <Tippy content={title}>
-        <img src={img} alt={title} srcset="" />
+        <img src={img} alt={title}  />
       </Tippy>
     </div>
   );

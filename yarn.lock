@@ -1673,6 +1673,11 @@
   dependencies:
     "esutils" "^2.0.2"
 
+"dotenv@^16.0.2":
+  "integrity" "sha512-JvpYKUmzQhYoIFgK2MOnF3bciIZoItIIoryihy0rIA+H4Jy0FmgyKYAHCTN98P5ybGSJcIFbh6QKeJdtZd1qhA=="
+  "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-16.0.2.tgz"
+  "version" "16.0.2"
+
 "elliptic@^6.5.4", "elliptic@6.5.4":
   "integrity" "sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ=="
   "resolved" "https://registry.npmjs.org/elliptic/-/elliptic-6.5.4.tgz"

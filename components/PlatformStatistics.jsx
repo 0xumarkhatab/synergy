@@ -2,10 +2,9 @@ import React from "react";
 import styles from "../styles/PlatformStatistics.module.css";
 import CircularTooltip from "./CircularTooltip";
 
-function PlatformStatistics({ platform }) {
-  console.log("platform ", platform);
+function PlatformStatistics({ platform,key }) {
   return (
-    <div className={styles.platform__statistics}>
+    <div key={key} className={styles.platform__statistics}>
       <div className={styles.platform__title}>
         <img src={platform.icon} alt={platform.title} />
         <h3 className={styles.platfrom__heading}>{platform.title}</h3>
@@ -20,7 +19,7 @@ function PlatformStatistics({ platform }) {
               <div className={styles.platform__field__list}>
               {platform.followers.slice(0,3).map((item) => {
                 return (
-                  <div className={styles.platform__field__list__Item}>
+                  <div key={item.screen_name} className={styles.platform__field__list__Item}>
                     <CircularTooltip img={item.img} title={item.screen_name} />
                   </div>
                 );
@@ -48,7 +47,7 @@ function PlatformStatistics({ platform }) {
               <div className={styles.platform__field__list}>
               {platform.following.slice(0,3).map((item) => {
                 return (
-                  <div className={styles.platform__field__list__Item}>
+                  <div key={item.screen_name} className={styles.platform__field__list__Item}>
                     <CircularTooltip img={item.img} title={item.screen_name} />
                   </div>
                 );
@@ -83,7 +82,7 @@ function PlatformStatistics({ platform }) {
               <div className={styles.platform__field__list}>
               {platform.channels.slice(0,3).map((item) => {
                 return (
-                  <div className={styles.platform__field__list__Item}>
+                  <div key={item.screen_name} className={styles.platform__field__list__Item}>
                     <CircularTooltip img={item.icon} title={item.title} />
                   </div>
                 );

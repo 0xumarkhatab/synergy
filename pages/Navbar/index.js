@@ -15,7 +15,7 @@ function Navbar() {
             </div>
             <div className={styles.navbar__center}>
                 <p>Synergy <img src='./down.png' /> </p>
-                <p>Synergy Labs <img src='./down.png' /></p>
+                <p>Synergy Team <img src='./down.png' /></p>
                 <p className={styles.highlight}>We're Building</p>
 
             </div>
