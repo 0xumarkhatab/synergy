@@ -32,7 +32,7 @@ function ProfileView(props) {
       </Head>
       <div className={styles.view}>
         <div className={styles.view__banner}>
-          <img src="./synergy_logo.png" alt="Profile Banner" />
+          <img src="./Synergy_logo.png" alt="Profile Banner" />
         </div>
         <div className={styles.profile__head}>
           <div className={styles.profile__picture}>
