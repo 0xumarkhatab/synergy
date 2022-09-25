@@ -42,3 +42,6 @@
 
 ![View Profile 2 ](./illustration/synergy6.PNG)
   
+## Live Link
+
+You can can check the project live here at https://synergy-beta.vercel.app/
