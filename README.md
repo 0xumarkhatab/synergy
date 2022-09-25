@@ -1,6 +1,8 @@
 # Synergy 
 ### A place to aggregate your social media presence at one place on a Decentralized Storage ` Ceramic `
 
+![Project HomePage](./illustration/synergy_1.PNG)
+
 ## Tech Stack 🔰
 
     ⭕ Next Js
@@ -26,5 +28,17 @@
     🔱 Just aggregating different social media and not serving the real use case
     🔱 Not worth to be a profuct but worth building for practice
   
-  
+### Project illustration  
+
+![HomePage](./illustration/synergy_1.PNG)
+
+![Introduction Section](./illustration/synergy_2.PNG)
+
+![Connection Establishment](./illustration/synergy4.PNG)
+
+![Edit Profile ](./illustration/synergy7.PNG)
+
+![View Profile 1 ](./illustration/synergy5.PNG)
+
+![View Profile 2 ](./illustration/synergy6.PNG)
   
