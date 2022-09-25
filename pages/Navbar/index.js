@@ -8,7 +8,7 @@ function Navbar() {
             <div className={styles.navbar__left}>
                 <Link href={"/"}>
                     <div className={styles.navbar__left__logo}>
-                        <img src='./synergy_icon.png' />
+                        <img src='./Synergy_icon.png' />
                     </div>
                 </Link>
 
